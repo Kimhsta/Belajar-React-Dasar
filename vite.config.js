@@ -6,12 +6,11 @@ import HelloWorld from './src/HelloWorld/hello-world'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // Output directory for the build
     rollupOptions: {
       input: {
         //Penadahan index
         index: "index.html",
-        HelloWorld: "hello-world.html",
+        hello_world: "hello-world.html"
       }
     }
   },
